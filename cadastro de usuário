@@ -1,0 +1,73 @@
+// ==========================================
+// SISTEMA DE CADASTRO DE USUÁRIO
+// ==========================================
+
+alert("Bem-vindo ao Sistema de Cadastro!");
+
+let nome = prompt("Digite seu nome completo:");
+let idade = Number(prompt("Digite sua idade:"));
+let sexo = prompt("Digite seu sexo:");
+let cpf = prompt("Digite seu CPF:");
+let dataNascimento = prompt("Digite sua data de nascimento:");
+let telefone = prompt("Digite seu telefone:");
+let email = prompt("Digite seu e-mail:");
+let endereco = prompt("Digite seu endereço:");
+let cidade = prompt("Digite sua cidade:");
+let estado = prompt("Digite seu estado:");
+let profissao = prompt("Digite sua profissão:");
+let escolaridade = prompt("Digite sua escolaridade:");
+let salario = Number(prompt("Digite seu salário:"));
+let estadoCivil = prompt("Digite seu estado civil:");
+let nacionalidade = prompt("Digite sua nacionalidade:");
+
+let categoria;
+
+if (idade < 18) {
+    categoria = "Menor de idade";
+} else if (idade < 60) {
+    categoria = "Adulto";
+} else {
+    categoria = "Idoso";
+}
+
+alert(
+"====================================\n" +
+"      DADOS DO USUÁRIO\n" +
+"====================================\n" +
+"Nome: " + nome + "\n" +
+"Idade: " + idade + " anos\n" +
+"Categoria: " + categoria + "\n" +
+"Sexo: " + sexo + "\n" +
+"CPF: " + cpf + "\n" +
+"Data de Nascimento: " + dataNascimento + "\n" +
+"Telefone: " + telefone + "\n" +
+"E-mail: " + email + "\n" +
+"Endereço: " + endereco + "\n" +
+"Cidade: " + cidade + "\n" +
+"Estado: " + estado + "\n" +
+"Profissão: " + profissao + "\n" +
+"Escolaridade: " + escolaridade + "\n" +
+"Estado Civil: " + estadoCivil + "\n" +
+"Nacionalidade: " + nacionalidade + "\n" +
+"Salário: R$ " + salario.toFixed(2)
+);
+
+console.log("========= DADOS DO USUÁRIO =========");
+console.log("Nome:", nome);
+console.log("Idade:", idade);
+console.log("Categoria:", categoria);
+console.log("Sexo:", sexo);
+console.log("CPF:", cpf);
+console.log("Data de Nascimento:", dataNascimento);
+console.log("Telefone:", telefone);
+console.log("E-mail:", email);
+console.log("Endereço:", endereco);
+console.log("Cidade:", cidade);
+console.log("Estado:", estado);
+console.log("Profissão:", profissao);
+console.log("Escolaridade:", escolaridade);
+console.log("Estado Civil:", estadoCivil);
+console.log("Nacionalidade:", nacionalidade);
+console.log("Salário: R$", salario.toFixed(2));
+
+alert("Cadastro realizado com sucesso!");
